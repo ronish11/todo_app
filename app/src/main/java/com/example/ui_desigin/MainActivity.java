@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public String name,pass;
     public Button login,createnew;
 
-    // just for check
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
