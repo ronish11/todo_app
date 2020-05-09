@@ -11,6 +11,7 @@
         android:layout_width="142dp"
         android:layout_height="85dp"
         android:layout_marginTop="28dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="REGISTER"
+        android:text="@string/register"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -34,11 +35,12 @@
     <EditText
         android:id="@+id/et_username"
         android:layout_width="289dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_add_box_black_24dp"
         android:drawableLeft="@drawable/ic_add_box_black_24dp"
-        android:hint="Enter your name "
+        android:hint="enter your name"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:textColor="#A6D5D9"
@@ -47,33 +49,38 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="289dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:hint="Enter your Password "
+        android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:textColor="#A6D5D9"
-        android:inputType="textPassword"
         android:textColorHint="#1C1D1E"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/et_username"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_username"
-        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
 
     <EditText
         android:id="@+id/et_email"
         android:layout_width="289dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_email_black_24dp"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:hint="Enter your Email "
         android:paddingStart="10dp"
@@ -84,16 +91,19 @@
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_password"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/et_address"
         android:layout_width="289dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_location_on_black_24dp"
         android:drawableLeft="@drawable/ic_location_on_black_24dp"
-        android:hint="Enter your Address "
+        android:hint="Enter your Address"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:textColor="#A6D5D9"
@@ -102,14 +112,17 @@
         app:layout_constraintEnd_toEndOf="@+id/et_email"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_email"
-        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/et_phon"
         android:layout_width="289dp"
-        android:layout_height="38dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
         android:drawableLeft="@drawable/ic_phone_black_24dp"
         android:hint="Enter your Phon Number"
         android:paddingStart="10dp"
@@ -120,7 +133,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_address"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_address"
-        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+        app:layout_constraintTop_toBottomOf="@+id/et_address"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
 
 
     <Button
@@ -136,7 +150,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_phon"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="@+id/et_phon"
-        app:layout_constraintTop_toBottomOf="@+id/et_phon" />
+        app:layout_constraintTop_toBottomOf="@+id/et_phon"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/back_to_login"
@@ -150,20 +165,22 @@
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/register"
         app:layout_constraintStart_toStartOf="@+id/register"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp"
         android:text="Or Signup with"
         android:textColor="@android:color/white"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintEnd_toEndOf="@+id/back_to_login"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="@+id/back_to_login"
-        app:layout_constraintTop_toBottomOf="@+id/back_to_login" />
+        tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -174,7 +191,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -187,7 +205,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -200,6 +219,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

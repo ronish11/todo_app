@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -27,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095">
+        app:layout_constraintVertical_bias="0.095"
+        android:contentDescription="@string/todo">
 
 
     </ImageView>
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="31dp"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="#fff"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -54,7 +56,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/rounded_corner"
         android:drawableLeft="@drawable/ic_add_box_black_24dp"
-        android:hint="enter_your_name"
+        android:hint="@string/enter_your_name"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:textColor="#A6D5D9"
@@ -63,7 +65,9 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:drawableStart="@drawable/ic_add_box_black_24dp" />
+        android:drawableStart="@drawable/ic_add_box_black_24dp"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/et_password"
@@ -72,7 +76,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/rounded_corner"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
-        android:hint="enter_your_password"
+        android:hint="@string/enter_your_password"
         android:paddingStart="10dp"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
@@ -82,7 +86,9 @@
         app:layout_constraintEnd_toEndOf="@+id/et_username"
         app:layout_constraintStart_toStartOf="@+id/et_username"
         app:layout_constraintTop_toBottomOf="@+id/et_username"
-        android:drawableStart="@drawable/ic_lock_black_24dp" />
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/bt_login"
@@ -92,7 +98,7 @@
         android:background="@drawable/round_corner_buttom"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="sign_in"
+        android:text="@string/sign_in"
         android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@+id/bt_register"
         app:layout_constraintHorizontal_bias="0.5"
@@ -110,7 +116,7 @@
         android:background="@drawable/rounded_register_button"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="create_new"
+        android:text="@string/create_new"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintHorizontal_bias="0.5"
@@ -121,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="or_signup_with"
+        android:text="@string/or_signup_with"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
@@ -135,7 +141,7 @@
         android:layout_height="21dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/twitter"
-        android:contentDescription="todo"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -149,7 +155,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/facebook_box"
-        android:contentDescription="todo"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -163,7 +169,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/google"
-        android:contentDescription="todo"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.5"

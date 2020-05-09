@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".TODO">
+        </activity>
         <activity android:name=".TODO" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">

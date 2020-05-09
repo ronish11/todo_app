@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
@@ -14,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,7 +29,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_username"
@@ -45,7 +48,9 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:drawableStart="@drawable/ic_add_box_black_24dp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/et_password"
@@ -64,7 +69,9 @@
         app:layout_constraintEnd_toEndOf="@+id/et_username"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_username"
-        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
 
     <EditText
         android:id="@+id/et_email"
@@ -82,7 +89,9 @@
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_password"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields"
+        android:drawableStart="@drawable/ic_email_black_24dp" />
 
     <EditText
         android:id="@+id/et_address"
@@ -100,7 +109,9 @@
         app:layout_constraintEnd_toEndOf="@+id/et_email"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_email"
-        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields"
+        android:drawableStart="@drawable/ic_location_on_black_24dp" />
 
     <EditText
         android:id="@+id/et_phon"
@@ -118,7 +129,9 @@
         app:layout_constraintEnd_toEndOf="@+id/et_address"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_address"
-        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+        app:layout_constraintTop_toBottomOf="@+id/et_address"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
 
     <Button
         android:id="@+id/userlogin"
@@ -133,7 +146,8 @@
         app:layout_constraintEnd_toEndOf="@+id/et_phon"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/et_phon"
-        app:layout_constraintTop_toBottomOf="@+id/et_phon" />
+        app:layout_constraintTop_toBottomOf="@+id/et_phon"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/usersignin"
@@ -148,13 +162,13 @@
         app:layout_constraintEnd_toEndOf="@+id/userlogin"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/userlogin"
-        app:layout_constraintTop_toBottomOf="@+id/userlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/userlogin"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Or Signup with"
         android:textColor="@android:color/white"
@@ -163,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="@+id/usersignin"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="@+id/usersignin"
-        app:layout_constraintTop_toBottomOf="@+id/usersignin" />
+        tools:ignore="HardcodedText,SmallSp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -174,7 +188,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -187,7 +202,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -200,6 +216,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
