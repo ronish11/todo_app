@@ -1,5 +1,6 @@
 package com.example.ui_desigin.database;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -33,11 +34,11 @@ public interface NotesDao {
 
     // read note by descending order
     @Query("SELECT * FROM notes ORDER BY date DESC")
-    List<NoteEntity> getAllNotes();
+    LiveData<List<NoteEntity>> getAllNotes();
 
     // delete all notes
     @Query("DELETE FROM notes")
-    NoteEntity deleteAllNotes();
+    int deleteAllNotes();
 
     // count all the note
     @Query("SELECT COUNT(*) FROM notes")

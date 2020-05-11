@@ -1,6 +1,7 @@
 package com.example.ui_desigin.Model;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.ui_desigin.EditorActivity;
 import com.example.ui_desigin.R;
 import com.example.ui_desigin.database.NoteEntity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -17,6 +19,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.example.ui_desigin.utils.Constants.NOTE_ID_KEY;
 
 public class NotesAdepter extends RecyclerView.Adapter<NotesAdepter.MyViewHolder> {
 
@@ -42,6 +46,15 @@ public class NotesAdepter extends RecyclerView.Adapter<NotesAdepter.MyViewHolder
 
         NoteEntity noteEntity= mDataList.get(position);
         holder.textView.setText(noteEntity.getText());
+
+        holder.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext, EditorActivity.class);
+                intent.putExtra(NOTE_ID_KEY,noteEntity.getId());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -49,7 +62,7 @@ public class NotesAdepter extends RecyclerView.Adapter<NotesAdepter.MyViewHolder
         return mDataList.size();
     }
 
-    static class MyViewHolder extends RecyclerView.ViewHolder{
+    class MyViewHolder extends RecyclerView.ViewHolder{
 
         @BindView(R.id.note_text)
         TextView textView;

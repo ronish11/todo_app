@@ -105,8 +105,16 @@ public class TODO extends AppCompatActivity {
                 addSampleData();
                 return true;
             }
+            case R.id.delete_all_data:{
+                deleteAllData();
+                return true;
+            }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void deleteAllData() {
+        mViewModel.deleteAllData();
     }
 
     private void addSampleData() {

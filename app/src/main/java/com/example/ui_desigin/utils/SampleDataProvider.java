@@ -9,8 +9,9 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 public class SampleDataProvider {
-    private static final String SAMPLE_TEXT_1 = "A simple note";
-    private static final String SAMPLE_TEXT_2= "A note with a\nline feed";
+    private static final String SAMPLE_TEXT_1 = "Go for meeting";
+    private static final String SAMPLE_TEXT_2= "play pubg";
+    private static final String SAMPLE_TEXT_3= "Read novel";
 
     private static Date getDate(int i)
     {
@@ -25,6 +26,7 @@ public class SampleDataProvider {
 
         notesList.add(new NoteEntity(1, getDate(0),SAMPLE_TEXT_1));
         notesList.add(new NoteEntity(2,getDate(-1),SAMPLE_TEXT_2));
+        notesList.add(new NoteEntity(3,getDate(-2),SAMPLE_TEXT_3));
 
         return notesList;
     }
