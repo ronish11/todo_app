@@ -54,4 +54,8 @@ public class EditorViewModel extends AndroidViewModel {
         }
         mRepository.insertNote(noteEntity);
     }
+
+    public void deleteNote() {
+        mRepository.deleteNote(mLiveNote.getValue());
+    }
 }

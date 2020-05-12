@@ -63,4 +63,14 @@ public class AppRepository {
             }
         });
     }
+
+    public void deleteNote(NoteEntity delete_Note) {
+
+        mExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                mDatabase.notesDao().deleteNote(delete_Note);
+            }
+        });
+    }
 }
