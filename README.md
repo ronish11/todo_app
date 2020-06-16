@@ -28,21 +28,11 @@ print s
 
 
 
-
-
-Markdown | Less | Pretty
 --- | --- | ---
-*Still* | `renders` | **nicely**
 ![foQKAvtR1Q](https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif)
- | ![foQKAvtR1Q](https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif)
- | ![foQKAvtR1Q](https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif)
- 
- 
- 
-<a href="https://youtu.be/MCo1UtflJHM"
-target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+--- | --- | ---
 
+![foQKAvtR1Q](https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif)
 
-
+--- | --- | ---
