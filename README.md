@@ -21,4 +21,8 @@ alert(s);
 s = "Python syntax highlighting"
 print s
 
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif" type="video/gif">
+</video> 
+
 ![foQKAvtR1Q](https://user-images.githubusercontent.com/43108632/84785811-a81fb300-b00b-11ea-9031-2e8d93418bcb.gif)
