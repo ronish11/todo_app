@@ -4,36 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/background"
     android:hapticFeedbackEnabled="false">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add_note"
         android:layout_width="55dp"
         android:layout_height="60dp"
+        android:backgroundTint="#FF0000"
         android:layout_marginEnd="44dp"
-        android:focusableInTouchMode="true"
         android:layout_marginRight="44dp"
-        android:scrollbars="vertical"
-        android:contextClickable="true"
         android:layout_marginBottom="36dp"
         android:background="@drawable/ic_add_note"
         android:clickable="true"
+        android:contextClickable="true"
         android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_add_box_black_24dp" tools:targetApi="m"/>
+        app:srcCompat="@drawable/ic_new_icon"
+        tools:targetApi="m" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notes_recyclerview"
         android:layout_width="383dp"
-        android:layout_height="588dp"
+        android:layout_height="698dp"
         android:layout_margin="@dimen/notes_recycler_margin"
-        android:background="#000000"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.045" />
 </androidx.constraintlayout.widget.ConstraintLayout>

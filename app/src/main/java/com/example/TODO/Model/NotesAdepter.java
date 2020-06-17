@@ -1,4 +1,4 @@
-package com.example.ui_desigin.Model;
+package com.example.TODO.Model;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ui_desigin.EditorActivity;
-import com.example.ui_desigin.R;
-import com.example.ui_desigin.database.NoteEntity;
+import com.example.TODO.EditorActivity;
+import com.example.TODO.R;
+import com.example.TODO.database.NoteEntity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
@@ -20,7 +20,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static com.example.ui_desigin.utils.Constants.NOTE_ID_KEY;
+import static com.example.TODO.utils.Constants.NOTE_ID_KEY;
 
 public class NotesAdepter extends RecyclerView.Adapter<NotesAdepter.MyViewHolder> {
 

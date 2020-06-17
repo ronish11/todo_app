@@ -1,4 +1,4 @@
-package com.example.ui_desigin;
+package com.example.TODO;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     public EditText uname,password;
     public String name,pass;
     public Button login,createnew;
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         createnew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent link=new Intent(MainActivity.this, RegisterActivity.class);
+                Intent link=new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(link);
             }
         });
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 initialize(); // inside this method veriable are converted into string
 
                 if(!validate()){
-                    Toast.makeText(MainActivity.this, "login error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "login error", Toast.LENGTH_SHORT).show();
 
                 }
                 else {
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             public void onsignupsucess(){
-                Intent link = new Intent(MainActivity.this,TODO.class);
+                Intent link = new Intent(LoginActivity.this,DashbordActivity.class);
                 startActivity(link);
             }
 

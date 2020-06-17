@@ -1,6 +1,6 @@
-package com.example.ui_desigin.utils;
+package com.example.TODO.utils;
 
-import com.example.ui_desigin.database.NoteEntity;
+import com.example.TODO.database.NoteEntity;
 
 import java.util.ArrayList;
 import java.util.Calendar;

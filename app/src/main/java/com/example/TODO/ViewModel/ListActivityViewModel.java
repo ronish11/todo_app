@@ -1,4 +1,4 @@
-package com.example.ui_desigin.ViewModel;
+package com.example.TODO.ViewModel;
 
 import android.app.Application;
 
@@ -6,9 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.ui_desigin.database.AppRepository;
-import com.example.ui_desigin.database.NoteEntity;
-import com.example.ui_desigin.utils.SampleDataProvider;
+import com.example.TODO.database.AppRepository;
+import com.example.TODO.database.NoteEntity;
 
 import java.util.List;
 

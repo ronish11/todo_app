@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:theme="@style/RegisterTheme">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -43,7 +44,7 @@
         android:hint="enter your name"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
-        android:textColor="#A6D5D9"
+        android:textColor="@color/colorblack"
         android:textColorHint="#1C1D1E"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -64,7 +65,7 @@
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
-        android:textColor="#A6D5D9"
+        android:textColor="@color/colorblack"
         android:textColorHint="#1C1D1E"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/et_username"
@@ -85,7 +86,7 @@
         android:hint="Enter your Email "
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
-        android:textColor="#A6D5D9"
+        android:textColor="@color/colorblack"
         android:textColorHint="#1C1D1E"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
@@ -106,7 +107,7 @@
         android:hint="Enter your Address"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
-        android:textColor="#A6D5D9"
+        android:textColor="@color/colorblack"
         android:textColorHint="#1C1D1E"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/et_email"
@@ -127,7 +128,7 @@
         android:hint="Enter your Phon Number"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
-        android:textColor="#fff"
+        android:textColor="@color/colorblack"
         android:textColorHint="#000000"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/et_address"
@@ -178,8 +179,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintEnd_toEndOf="@+id/back_to_login"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="@+id/back_to_login"
+        app:layout_constraintTop_toBottomOf="@+id/back_to_login"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="HardcodedText" />
 
     <ImageButton

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.ui_desigin.EditorActivity">
+    tools:context="com.example.TODO.EditorActivity">
     <item
         android:title="Delete"
         android:id="@+id/action_delete_note"

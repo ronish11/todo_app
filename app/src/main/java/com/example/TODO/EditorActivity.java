@@ -1,29 +1,24 @@
-package com.example.ui_desigin;
+package com.example.TODO;
 
 import android.os.Bundle;
 
-import com.example.ui_desigin.ViewModel.EditorViewModel;
-import com.example.ui_desigin.database.NoteEntity;
-import com.example.ui_desigin.utils.Constants;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.TODO.ViewModel.EditorViewModel;
+import com.example.TODO.utils.Constants;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static com.example.ui_desigin.utils.Constants.EDITING_KEY;
+import static com.example.TODO.utils.Constants.EDITING_KEY;
 
 public class EditorActivity extends AppCompatActivity {
 

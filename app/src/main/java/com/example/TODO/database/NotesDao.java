@@ -1,4 +1,4 @@
-package com.example.ui_desigin.database;
+package com.example.TODO.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,8 +8,6 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import java.util.List;
-
-import butterknife.OnClick;
 
 @Dao
 public interface NotesDao {

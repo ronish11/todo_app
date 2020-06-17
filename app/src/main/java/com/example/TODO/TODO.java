@@ -1,4 +1,4 @@
-package com.example.ui_desigin;
+package com.example.TODO;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +17,9 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 
-import com.example.ui_desigin.ViewModel.ListActivityViewModel;
-import com.example.ui_desigin.database.NoteEntity;
-import com.example.ui_desigin.Model.NotesAdepter;
+import com.example.TODO.ViewModel.ListActivityViewModel;
+import com.example.TODO.database.NoteEntity;
+import com.example.TODO.Model.NotesAdepter;
 
 
 import java.util.ArrayList;

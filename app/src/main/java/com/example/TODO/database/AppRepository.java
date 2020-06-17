@@ -1,11 +1,11 @@
-package com.example.ui_desigin.database;
+package com.example.TODO.database;
 
 import android.content.Context;
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.ui_desigin.utils.SampleDataProvider;
+import com.example.TODO.utils.SampleDataProvider;
 
 import java.util.List;
 import java.util.concurrent.Executor;

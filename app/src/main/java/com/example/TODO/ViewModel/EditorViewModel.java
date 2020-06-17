@@ -1,4 +1,4 @@
-package com.example.ui_desigin.ViewModel;
+package com.example.TODO.ViewModel;
 
 import android.app.Application;
 import android.text.TextUtils;
@@ -7,8 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.ui_desigin.database.AppRepository;
-import com.example.ui_desigin.database.NoteEntity;
+import com.example.TODO.database.AppRepository;
+import com.example.TODO.database.NoteEntity;
 
 import java.util.Date;
 import java.util.concurrent.Executor;

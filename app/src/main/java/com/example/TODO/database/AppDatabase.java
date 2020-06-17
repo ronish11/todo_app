@@ -1,11 +1,10 @@
-package com.example.ui_desigin.database;
+package com.example.TODO.database;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 
 

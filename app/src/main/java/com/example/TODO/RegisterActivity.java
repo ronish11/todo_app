@@ -1,4 +1,4 @@
-package com.example.ui_desigin;
+package com.example.TODO;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,11 +8,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -50,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
           }
           public void onSignUpSucess(){
               // TODO go back to login page
-              Intent link = new Intent(RegisterActivity.this, MainActivity.class);
+              Intent link = new Intent(RegisterActivity.this, LoginActivity.class);
               startActivity(link);
           }
           public boolean validate(){
@@ -89,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
         back_to_login.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-              Intent link=new Intent(RegisterActivity.this, MainActivity.class);
+              Intent link=new Intent(RegisterActivity.this, LoginActivity.class);
               startActivity(link);
           }
       });

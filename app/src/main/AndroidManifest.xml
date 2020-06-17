@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ui_desigin">
+    package="com.example.TODO">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_icon"
-        android:label="@string/app_name"
+        android:label="TODO"
         android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".EditorActivity"
-            android:label="@string/title_activity_editor"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".TODO">
-        </activity>
-        <activity android:name=".TODO" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DashbordActivity"
+            android:theme="@style/DashboardTheme"/>
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:parentActivityName=".TODO"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TODO" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/RegisterTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/RegisterTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category" />
             </intent-filter>
         </activity>
     </application>
