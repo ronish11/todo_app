@@ -65,5 +65,26 @@ User must be register before login
 
 ![register](https://user-images.githubusercontent.com/43108632/84854019-43eb0680-b080-11ea-8daa-54582d7ae18e.gif)
 
+3. #### Splash screen 
+
+It is welcome screen before lunching the application.
+
+![Splash Screen](https://user-images.githubusercontent.com/43108632/84915479-92c68980-b0dc-11ea-8f99-69671cceb109.gif)
+
+4. #### Dashbord screen
+
+After login used is able to use dashbord that include TODO app, About page, mail link
+mobile setting, facebook link and logout
+
+![Dashbord](https://user-images.githubusercontent.com/43108632/84916099-5a737b00-b0dd-11ea-8666-ef0145a9f87b.png)
+
+
+![logout](https://user-images.githubusercontent.com/43108632/84916239-8a228300-b0dd-11ea-8c2f-4c253d0e76a1.png)
+
+5. #### About page 
+
+this page hold the informaton about app developer. where contact number and email is provided
+
+![about](https://user-images.githubusercontent.com/43108632/84916631-061ccb00-b0de-11ea-97be-164bcf66804e.gif)
 
 
