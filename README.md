@@ -13,7 +13,7 @@ Below Figure shows the overall component of application
 ![app screen](https://user-images.githubusercontent.com/43108632/84849659-8ce98d80-b075-11ea-8894-5303145b0265.JPG)
 
 Here, the Colored represent the folowing
- **white:** UI component
+ **white:** UI component of application
  **Blue:** ViewModels
  **Yellow:** Repository
  **Green:** Room Database, SQLlite Database, Entity, DAO
