@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DashbordActivity"
-            android:theme="@style/DashboardTheme"/>
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".AppInfo.AboutActivity"></activity>
+        <activity
+            android:name=".Dashbord.DashbordActivity"
+            android:theme="@style/DashboardTheme" />
+        <activity android:name=".Splash.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +27,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TODO" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".LoginAndSignUp.RegisterActivity"
             android:theme="@style/RegisterTheme" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".LoginAndSignUp.LoginActivity"
             android:theme="@style/RegisterTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

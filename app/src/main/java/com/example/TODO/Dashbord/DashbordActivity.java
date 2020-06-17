@@ -1,4 +1,4 @@
-package com.example.TODO;
+package com.example.TODO.Dashbord;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +9,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.TODO.AppInfo.AboutActivity;
+import com.example.TODO.LoginAndSignUp.LoginActivity;
+import com.example.TODO.R;
+import com.example.TODO.TODO;
 
 public class DashbordActivity extends AppCompatActivity {
 
@@ -21,8 +24,6 @@ public class DashbordActivity extends AppCompatActivity {
     private CardView cardview4;
     private CardView cardview5;
     private CardView cardview6;
-    private CardView cardview7;
-    private CardView cardview8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class DashbordActivity extends AppCompatActivity {
         this.cardview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(DashbordActivity.this, TODO.class);
+                Intent intent1 = new Intent(DashbordActivity.this, AboutActivity.class);
                 startActivity(intent1);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.TODO;
+package com.example.TODO.LoginAndSignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.TODO.Dashbord.DashbordActivity;
+import com.example.TODO.R;
 
 public class LoginActivity extends AppCompatActivity {
     public EditText uname,password;
@@ -51,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
             public void onsignupsucess(){
-                Intent link = new Intent(LoginActivity.this,DashbordActivity.class);
+                Intent link = new Intent(LoginActivity.this, DashbordActivity.class);
                 startActivity(link);
             }
 

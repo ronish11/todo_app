@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.TODO.database.AppRepository;
+import com.example.TODO.Repository.AppRepository;
 import com.example.TODO.database.NoteEntity;
 
 import java.util.List;

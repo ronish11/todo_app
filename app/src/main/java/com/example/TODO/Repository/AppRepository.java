@@ -1,10 +1,12 @@
-package com.example.TODO.database;
+package com.example.TODO.Repository;
 
 import android.content.Context;
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 
+import com.example.TODO.database.AppDatabase;
+import com.example.TODO.database.NoteEntity;
 import com.example.TODO.utils.SampleDataProvider;
 
 import java.util.List;
